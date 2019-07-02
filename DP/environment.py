@@ -1,6 +1,8 @@
 """
 %bookmark ri4 /Users/mas/learning/baby-steps-of-rl-ja/MyObjects
 %cd ri4
+%bookmark ri5 /Users/mas/learning/baby-steps-of-rl-ja/DP
+%cd ri5
 %pwd
 """
 
@@ -46,6 +48,7 @@ class Environment():
         #  -1: damage cell (game end)
         #  1: reward cell (game end)
         #  9: block cell (can't locate agent)
+        #地図と状態を保有
         self.grid = grid
         self.agent_state = State()
 
@@ -56,6 +59,7 @@ class Environment():
         # Agent can move to a selected direction in move_prob.
         # It means the agent will move different direction
         # in (1 - move_prob).
+        #ベースとなる行動方向の遷移確率
         self.move_prob = move_prob
         self.reset()
     #迷路の行数
@@ -170,7 +174,7 @@ class Environment():
         #報酬値（スカラー）と終了フラグを返す
         return reward, done
     
-    #状態のリセット、左上のセルの状態
+    #状態のリセット、左下のセルの状態
     def reset(self):
         # Locate the agent at lower left corner.
         self.agent_state = State(self.row_length - 1, 0)
