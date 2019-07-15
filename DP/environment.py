@@ -9,6 +9,8 @@
 from enum import Enum
 import numpy as np
 
+#環境を定義する
+
 #状態クラス、行番号と列番号を保持するだけ
 class State():
     def __init__(self, row=-1, column=-1):
@@ -188,7 +190,7 @@ class Environment():
         #次の状態オブジェクト、即時報酬、終了フラグを返す
         return next_state, reward, done
     
-    #現在の状態オブジェクトと
+    #次期の状態オブジェクトと報酬、終了フラグを返す
     def transit(self, state, action):
         #任意の状態及び選択した行動に対する、次の状態の遷移確率を取得
         transition_probs = self.transit_func(state, action)
