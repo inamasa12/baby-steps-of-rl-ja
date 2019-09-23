@@ -24,14 +24,15 @@
 
 学習プロセスを通じてエージェントに各状態の価値を認識させる
 価値定義はベルマン方程式に基づく  
+<img src="https://latex.codecogs.com/gif.latex?V_{\pi}\left&space;(&space;s&space;\right&space;)=\sum_{a}\pi\left&space;(&space;a&space;\mid&space;s&space;\right&space;)\sum_{s'}T\left&space;(&space;s'&space;\mid&space;s,&space;a\right&space;)\left&space;(&space;R\left&space;(&space;s,&space;s'&space;\right&space;)&plus;\gamma&space;V_{\pi}\left&space;(&space;s'&space;\right&space;)&space;\right&space;)">  
 
 
 * 学習方法  
   * モデルベース  
   動的計画法（Dynamic Programming: DP）とも呼ぶ  
   状態遷移確率、即時報酬が事前に定義可能な場合に使用  
-  シミュレーションが不要で全ての状態価値を繰り返し計算で求める
-  仮置きした状態価値を繰り返し計算で更新していく
+  シミュレーションが不要で全ての状態価値を繰り返し計算で求める  
+  仮置きした状態価値を繰り返し計算で更新していく  
   * モデルフリー  
 
 
