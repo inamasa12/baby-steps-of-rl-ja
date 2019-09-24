@@ -23,7 +23,8 @@
 ### 強化学習 Tips  
 
 学習プロセスを通じてエージェントに各状態の価値を認識させる  
-価値定義はベルマン方程式に基づく（状態価値を戦略の期待値で定義するものと、選択可能な行動の最大価値で定義するものがある）  
+価値定義はベルマン方程式に基づく  
+状態価値を戦略の期待値で定義するものと、選択可能な行動の最大価値で定義するものがある  
 
 　<img src="https://latex.codecogs.com/gif.latex?V_{\pi}\left&space;(&space;s&space;\right&space;)=\sum_{a}\pi\left&space;(&space;a&space;\mid&space;s&space;\right&space;)\sum_{s'}T\left&space;(&space;s'&space;\mid&space;s,&space;a\right&space;)\left&space;(&space;R\left&space;(&space;s,&space;s'&space;\right&space;)&plus;\gamma&space;V_{\pi}\left&space;(&space;s'&space;\right&space;)&space;\right&space;)">  
 　<img src="https://latex.codecogs.com/gif.latex?V\left&space;(&space;s&space;\right&space;)={max}_{a}\sum_{s'}T\left&space;(&space;s'&space;\mid&space;s,&space;a\right&space;)\left&space;(&space;R\left&space;(&space;s,&space;s'&space;\right&space;)&plus;\gamma&space;V_{\pi}\left&space;(&space;s'&space;\right&space;)&space;\right&space;)">  
@@ -35,7 +36,14 @@
   状態遷移確率、即時報酬が事前に定義可能な場合に用いる  
   シミュレーションが不要で全ての状態価値を繰り返し計算で求める  
   仮置きした状態価値を繰り返し計算で更新していく  
+   * Policy Iteration  
+   状態価値を戦略の期待値で更新  
+   状態価値の更新に併せて、価値が最大の行動を選択するように戦略を更新していく必要がある  
+   * Value Iteration  
+   状態価値を選択可能な行動の最大価値で更新  
   * モデルフリー  
+  シミュレーションを通じて状態価値を更新していく  
+  
 
 
 
