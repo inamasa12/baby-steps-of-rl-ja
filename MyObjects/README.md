@@ -50,11 +50,11 @@
 ### 強化学習 Tips  
 
 モデルフリーの学習  
-* シミュレーションの方法
+* シミュレーションの方法  
 Epsilon-Greedy法
 * 各状態価値の学習方法  
- * モンテカルロ法（Monte Carlo Methods）
- * TD法（Temporal Difference Learning）
+  * モンテカルロ法（Monte Carlo Methods）
+  * TD法（Temporal Difference Learning）
   
 
 
