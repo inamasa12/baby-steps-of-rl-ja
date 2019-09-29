@@ -68,9 +68,14 @@ Epsilon-Greedy法:
 モデルベース同様にPolicyベースとValueベースがある
   * On Policy  
   モデルベースのPolicy Iterationに相当  
-  翌期の状態価値は戦略が選択する行動の価値  
+  翌期の状態価値は戦略が選択する行動の価値
+  SARSAが相当  
+  Qテーブルを用いる場合は価値が最大の行動を選択する戦略となるため、戦略と価値評価は一体となる  
+  戦略を行動選択確率で表す場合等、戦略と価値評価は分離して定義することが可能  
+  戦略担当をActor、価値評価担当をCriticとして定義 ⇒ Actor Critic法  
   * Off Policy  
   モデルベースのValue Iterationに相当  
   翌期の状態価値は最大の行動価値  
+  Q-Learningが相当  
 
 
