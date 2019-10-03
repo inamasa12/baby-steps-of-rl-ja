@@ -89,6 +89,8 @@ Deep Q Networkが相当
 * Value Function Approximation  
 インプットを状態、アウトプットを各行動の価値とするニューラルネットワークモデル  
 教師データを報酬と翌期の状態から推定した行動価値の最大値を割引いた金額の合計額とする
+* Policy Gradient（方策勾配法）  
+
 
 学習安定化の工夫  
 * Experience Replay  
@@ -100,3 +102,8 @@ Deep Q Networkが相当
 一定期間固定したパラメータで価値推定を行うことで学習の安定化を図る  
 * 報酬のClipping  
 報酬額を規格化し、学習結果を安定させる  
+* Raibow  
+Deep Mindによる強化学習モデル  
+7つの工夫を組み込む  
+ * Double DQN  
+ 
