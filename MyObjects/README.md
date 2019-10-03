@@ -105,5 +105,6 @@ Deep Q Networkが相当
 * Raibow  
 Deep Mindによる強化学習モデル  
 7つの工夫を組み込む  
- * Double DQN  
+  * Double DQN  
+  
  
