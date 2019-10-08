@@ -91,7 +91,7 @@ Deep Q Networkが相当
 教師データを報酬と翌期の状態から推定した行動価値の最大値を割引いた金額の合計額とする
 * Policy Gradient（方策勾配法）  
 状態別に各行動の選択確率を出力するモデル  
-出力する各行動の選択確率に基づく戦略の期待値が最大となるようにパラメータを学習  
+出力する各行動の選択確率に基づく下記の戦略の期待値が最大となるようにパラメータを学習  
   
   　<img src="https://latex.codecogs.com/gif.latex?E_{\pi&space;_{\theta&space;}}\left&space;[&space;log\pi&space;_{\theta&space;}\left&space;(&space;a|s&space;\right&space;)Q^{\pi&space;_{\theta&space;}}\left&space;(&space;s,a&space;\right&space;)&space;\right&space;]" title="E_{\pi _{\theta }}\left [ log\pi _{\theta }\left ( a|s \right )Q^{\pi _{\theta }}\left ( s,a \right ) \right ]" />  
 
