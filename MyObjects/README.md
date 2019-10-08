@@ -96,7 +96,10 @@ Deep Q Networkが相当
   　<img src="https://latex.codecogs.com/gif.latex?E_{\pi&space;_{\theta&space;}}\left&space;[&space;log\pi&space;_{\theta&space;}\left&space;(&space;a|s&space;\right&space;)Q^{\pi&space;_{\theta&space;}}\left&space;(&space;s,a&space;\right&space;)&space;\right&space;]" title="E_{\pi _{\theta }}\left [ log\pi _{\theta }\left ( a|s \right )Q^{\pi _{\theta }}\left ( s,a \right ) \right ]" />  
 行動価値Qを別のモデルで計算する場合 ⇒ Actor Critic  
 行動価値と状態価値の差分で価値を表現する場合 ⇒ Advantage  
-
+  * A2CとA3C  
+  ともにActor CriticとAdvantageを使用  
+  A3Cは学習を分散させて（Asynchronous）、定期的に結果を集約する  
+  
 
 学習安定化の工夫  
 * Experience Replay  
