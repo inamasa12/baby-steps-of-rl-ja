@@ -100,7 +100,6 @@ Deep Q Networkが相当
   ともにActor CriticとAdvantageを使用  
   A3Cは学習を分散させて（Asynchronous）、定期的に結果を集約する  
   
-
 学習安定化の工夫  
 * Experience Replay  
 蓄積した経験からサンプリングして学習データを作成する  
@@ -132,7 +131,7 @@ Deep Mindによる強化学習モデル
   ニューラルネットワークの重みとバイアスにランダム要素を加えて探索領域の拡張を試みるもの  
 
 次に戦略をニューラルネットワークで表現する  
-最適化では価値の期待値を最大化するように行動確率を決定する  
+最適化では価値の期待値を最大化するように行動確率を更新する  
 　  
 　<img src="https://latex.codecogs.com/gif.latex?V_{\pi}\left(s\right)&space;=\sum_{a}\pi\left(a|s\right)\sum_{s'}T\left(s'|s,a\right)\left(R\left(s,s'\right)&plus;\gamma&space;V_{\pi}\left(s'\right)&space;\right&space;)\right)" title="V_{\pi}\left(s\right) =\sum_{a}\pi\left(a|s\right)\sum_{s'}T\left(s'|s,a\right)\left(R\left(s,s'\right)+\gamma V_{\pi}\left(s'\right) \right )\right)" />  
  
