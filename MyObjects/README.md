@@ -139,4 +139,10 @@ Deep Mindによる強化学習モデル
  　  
  　<img src="https://latex.codecogs.com/gif.latex?A\left&space;(&space;s,a&space;\right&space;)=Q_{w}\left&space;(&space;s,a&space;\right&space;)&space;-&space;V_{v}\left&space;(&space;s&space;\right&space;)" title="A\left ( s,a \right )=Q_{w}\left ( s,a \right ) - V_{v}\left ( s \right )" />  
 
+* Advantage Actor Critic (A2c)  
+Actor criticにおける状態価値の評価をAdvantageの評価に置き換える  
+分散環境で並列的に経験を収集する手法も含む  
+* DDPG (Deep Deterministic Policy Gradient)  
+
+
 
