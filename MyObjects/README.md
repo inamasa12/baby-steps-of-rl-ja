@@ -133,6 +133,6 @@ Deep Mindによる強化学習モデル
 次に戦略をニューラルネットワークで表現する  
 最適化では価値の期待値を最大化するように行動確率を更新する  
 　  
-　<img src="https://latex.codecogs.com/gif.latex?V_{\pi}\left(s\right)&space;=\sum_{a}\pi\left(a|s\right)\sum_{s'}T\left(s'|s,a\right)\left(R\left(s,s'\right)&plus;\gamma&space;V_{\pi}\left(s'\right)&space;\right&space;)\right)" title="V_{\pi}\left(s\right) =\sum_{a}\pi\left(a|s\right)\sum_{s'}T\left(s'|s,a\right)\left(R\left(s,s'\right)+\gamma V_{\pi}\left(s'\right) \right )\right)" />  
+　<img src="https://latex.codecogs.com/gif.latex?J\left&space;(&space;\theta&space;\right&space;)\propto&space;\sum_{s\in&space;S}d^{\pi_{\theta&space;}}\left&space;(&space;s&space;\right&space;)\sum_{a\in&space;A}\pi_{\theta&space;}\left&space;(&space;a|s&space;\right&space;)Q^{\pi_{\theta&space;}}\left&space;(&space;s,a&space;\right&space;)" title="J\left ( \theta \right )\propto \sum_{s\in S}d^{\pi_{\theta }}\left ( s \right )\sum_{a\in A}\pi_{\theta }\left ( a|s \right )Q^{\pi_{\theta }}\left ( s,a \right )" />  
  
  
