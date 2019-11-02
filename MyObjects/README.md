@@ -135,4 +135,8 @@ Deep Mindによる強化学習モデル
 　  
 　<img src="https://latex.codecogs.com/gif.latex?J\left&space;(&space;\theta&space;\right&space;)\propto&space;\sum_{s\in&space;S}d^{\pi_{\theta&space;}}\left&space;(&space;s&space;\right&space;)\sum_{a\in&space;A}\pi_{\theta&space;}\left&space;(&space;a|s&space;\right&space;)Q^{\pi_{\theta&space;}}\left&space;(&space;s,a&space;\right&space;)" title="J\left ( \theta \right )\propto \sum_{s\in S}d^{\pi_{\theta }}\left ( s \right )\sum_{a\in A}\pi_{\theta }\left ( a|s \right )Q^{\pi_{\theta }}\left ( s,a \right )" />  
  
- 
+ ここで行動価値ではなく、状態価値を引いたAdvantageを用いることがある  
+ 　  
+ 　<img src="https://latex.codecogs.com/gif.latex?A\left&space;(&space;s,a&space;\right&space;)=Q_{w}\left&space;(&space;s,a&space;\right&space;)&space;-&space;V_{v}\left&space;(&space;s&space;\right&space;)" title="A\left ( s,a \right )=Q_{w}\left ( s,a \right ) - V_{v}\left ( s \right )" />  
+
+
