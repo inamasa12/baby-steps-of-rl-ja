@@ -143,6 +143,16 @@ Deep Mindによる強化学習モデル
 Actor criticにおける状態価値の評価をAdvantageの評価に置き換える  
 分散環境で並列的に経験を収集する手法も含む  
 * DDPG (Deep Deterministic Policy Gradient)  
+各行動の選択確率ではなく、行動自体を出力するモデル  
+連続的な行動を表現できる  
+学習にはTD誤差を使用  
+Fixed Target Q-Networkを使用  
+* Trust Region Policy Optimization (TRPO)  
+更新で戦略が大きく振動するのを回避しながら（KL距離の制約）学習を行う方法  
+特にクリッピングしたKL距離を最適化目的関数に含めたモデルをProximal Policy Optimaization (PPO)と呼ぶ  
+
+
+
 
 
 
