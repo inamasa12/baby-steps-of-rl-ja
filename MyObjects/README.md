@@ -130,7 +130,7 @@ Deep Mindによる強化学習モデル
   1. Noisy Nets  
   ニューラルネットワークの重みとバイアスにランダム要素を加えて探索領域の拡張を試みるもの  
 
-次に戦略をニューラルネットワークで表現する  
+次にニューラルネットワークで戦略を表現するケース  
 最適化では価値の期待値を最大化するように行動確率を更新する  
 　  
 　<img src="https://latex.codecogs.com/gif.latex?J\left&space;(&space;\theta&space;\right&space;)\propto&space;\sum_{s\in&space;S}d^{\pi_{\theta&space;}}\left&space;(&space;s&space;\right&space;)\sum_{a\in&space;A}\pi_{\theta&space;}\left&space;(&space;a|s&space;\right&space;)Q^{\pi_{\theta&space;}}\left&space;(&space;s,a&space;\right&space;)" title="J\left ( \theta \right )\propto \sum_{s\in S}d^{\pi_{\theta }}\left ( s \right )\sum_{a\in A}\pi_{\theta }\left ( a|s \right )Q^{\pi_{\theta }}\left ( s,a \right )" />  
@@ -151,6 +151,10 @@ Fixed Target Q-Networkを使用
 更新で戦略が大きく振動するのを回避しながら（KL距離の制約）学習を行う方法  
 特にクリッピングしたKL距離を最適化目的関数に含めたモデルをProximal Policy Optimaization (PPO)と呼ぶ  
 
+|header1|header2|header3|
+|:--|--:|:--:|
+|align left|align right|align center|
+|a|b|c|
 
 
 
