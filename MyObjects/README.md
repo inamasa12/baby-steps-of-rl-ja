@@ -153,8 +153,8 @@ Fixed Target Q-Networkを使用
 
 ||Valueベース|Policyベース|
 |:--|:--:|:--:|
-|長所|align right|align center|
-|短所|align right|align center|
+|長所|align right|連続的な行動を表現できる <br> 選択する行動が偏りにくい|
+|短所|align right|過学習しやすい|
 
 
 |header1|header2|header3|
