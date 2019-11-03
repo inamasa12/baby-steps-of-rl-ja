@@ -151,6 +151,12 @@ Fixed Target Q-Networkを使用
 更新で戦略が大きく振動するのを回避しながら（KL距離の制約）学習を行う方法  
 特にクリッピングしたKL距離を最適化目的関数に含めたモデルをProximal Policy Optimaization (PPO)と呼ぶ  
 
+||Valueベース|Policyベース|
+|:--|:--:|:--:|
+|align left|align right|align center|
+|a|b|c|
+
+
 |header1|header2|header3|
 |:--|--:|:--:|
 |align left|align right|align center|
