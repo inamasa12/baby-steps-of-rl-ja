@@ -153,8 +153,8 @@ Fixed Target Q-Networkを使用
 
 ||Valueベース|Policyベース|
 |:--|:--:|:--:|
-|align left|align right|align center|
-|a|b|c|
+|長所|align right|align center|
+|短所|align right|align center|
 
 
 |header1|header2|header3|
