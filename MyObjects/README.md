@@ -190,6 +190,15 @@ print(d[x])
 ~~~ruby  
 0
 ~~~  
+* Counter  
+要素をキー、出現回数を値とした辞書を作成  
+~~~ruby  
+c = Counter(['a', 'a', 'a', 'b', 'b', 'c'])  
+print(c)
+~~~  
+~~~ruby  
+Counter({'a': 4, 'c': 2, 'b': 1})
+~~~  
 
 
 
