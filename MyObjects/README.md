@@ -182,10 +182,13 @@ Fixed Target Q-Networkを使用
 ### Python Tips  
 * defaultdict  
 指定したキーが存在しない場合に、初期化時の関数が実行され、値として設定される辞書  
-下記で初期化した辞書について、存在しないキーの値を呼ぶと`(int=)0`が表示される  
+下記で初期化した辞書について、存在しないキーの値を呼ぶと`0`が表示される  
 ~~~ruby  
-d = defaultdict(int)  
+d = defaultdict(0)  
 print(d[x])
+~~~  
+~~~ruby  
+0
 ~~~  
 
 
