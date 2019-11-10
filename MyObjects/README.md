@@ -179,6 +179,10 @@ Fixed Target Q-Networkを使用
 1. 公開された検証済みのアルゴリズムを活用する  
 
 ## Day6  
+### 強化学習 Tips  
+
+
+
 ### Python Tips  
 * defaultdict  
 指定したキーが存在しない場合に、初期化時の関数が実行され、値として設定される辞書  
@@ -197,7 +201,7 @@ c = Counter(['a', 'a', 'a', 'b', 'b', 'c'])
 print(c)
 ~~~  
 ~~~ruby  
-Counter({'a': 4, 'c': 2, 'b': 1})
+Counter({'a': 3, 'c': 2, 'b': 1})
 ~~~  
 
 
