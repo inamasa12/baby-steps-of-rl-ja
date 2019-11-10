@@ -178,6 +178,12 @@ Fixed Target Q-Networkを使用
 スクリプト化、パラメータの記録  
 1. 公開された検証済みのアルゴリズムを活用する  
 
+## Day6  
+### Python Tips  
+* defaultdict  
+指定したキーが存在しない場合に、初期化時の関数が実行され、値として設定される辞書  
+    
+d = defaultdict(int)  
 
 
 
