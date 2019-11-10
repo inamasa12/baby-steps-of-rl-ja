@@ -182,8 +182,9 @@ Fixed Target Q-Networkを使用
 ### Python Tips  
 * defaultdict  
 指定したキーが存在しない場合に、初期化時の関数が実行され、値として設定される辞書  
-    
+~~~
 d = defaultdict(int)  
+~~~
 
 
 
