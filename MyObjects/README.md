@@ -249,6 +249,21 @@ CPUでの処理が速くなる
 1. 模倣学習  
 エキスパートの行動を学習する  
 ⇒ 限定的なエキスパートの行動記録から、如何に学習するかがポイント  
+* Forward Training  
+ステップ毎に戦略を作成し、その戦略に基づいてシミュレーションすることで実際の状態遷移分布に近いサンプルを蓄積  
+各状態でエキスパートが取った行動を学習させる  
+* SMILe  
+最初の戦略はエキスパートの行動だけから学習して作成  
+その後はシミュレーションで学習した戦略をブレンドしていく  
+<img src="https://latex.codecogs.com/gif.latex?\pi^{n}=\left&space;(&space;1-a&space;\right&space;)^{n}\pi^{*}&plus;\alpha&space;\sum_{j=1}^{n}\left&space;(&space;1-a&space;\right&space;)^{j-1}\widehat{\pi}^{*j}" title="\pi^{n}=\left ( 1-a \right )^{n}\pi^{*}+\alpha \sum_{j=1}^{n}\left ( 1-a \right )^{j-1}\widehat{\pi}^{*j}" /></a>
+* DAgger  
+最初の戦略はエキスパートの行動だけから学習する点はSMILE同様  
+その後はシミュレーションで各状態のエキスパートの行動を蓄積し、学習に用いる  
+* GAIL  
+
+
+
+
 
 1. 逆強化学習
 
