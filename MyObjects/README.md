@@ -233,36 +233,30 @@ Fixed Target Q-Networkを使用
 1. 再現性の低さへの対応  
 勾配法とは異なる学習アプローチ  
 CPUでの処理が速くなる  
-  1. 進化戦略  
-    複数のパラメータでエピソードを実行し、評価の高いパラメータに近いものを選択していく  
-  1. 遺伝的アルゴリズム  
-    同様に、評価の高いパラメータを合成する（交叉）、パラメータに乱数を加える（突然変異）等の操作を行う  
+   1. 進化戦略  
+   複数のパラメータでエピソードを実行し、評価の高いパラメータに近いものを選択していく  
+   1. 遺伝的アルゴリズム  
+   同様に、評価の高いパラメータを合成する（交叉）、パラメータに乱数を加える（突然変異）等の操作を行う  
 
 1. 局所最適、過学習への対応  
-  1. 模倣学習  
-    エキスパートの行動を学習する  
-    ⇒ 限定的なエキスパートの行動記録から、如何に学習するかがポイント  
-    * Forward Training  
+   1. 模倣学習  
+   エキスパートの行動を学習する  
+   ⇒ 限定的なエキスパートの行動記録から、如何に学習するかがポイント  
+      * Forward Training  
       ステップ毎に戦略を作成し、その戦略に基づいてシミュレーションすることで実際の状態遷移分布に近いサンプルを蓄積  
       各状態でエキスパートが取った行動を学習させる  
-    * SMILe(Stochastic Mixing Iterative Leaning)  
+      * SMILe(Stochastic Mixing Iterative Leaning)  
       最初の戦略はエキスパートの行動だけから学習して作成  
       その後はシミュレーションで学習した戦略をブレンドしていく  
 　  
 <img src="https://latex.codecogs.com/gif.latex?\pi^{n}=\left&space;(&space;1-a&space;\right&space;)^{n}\pi^{*}&plus;\alpha&space;\sum_{j=1}^{n}\left&space;(&space;1-a&space;\right&space;)^{j-1}\widehat{\pi}^{*j}" title="\pi^{n}=\left ( 1-a \right )^{n}\pi^{*}+\alpha \sum_{j=1}^{n}\left ( 1-a \right )^{j-1}\widehat{\pi}^{*j}" /></a>  
-     
-    * DAgger(Dataset Aggregation)  
+      * DAgger(Dataset Aggregation)  
       最初の戦略はエキスパートの行動だけから学習する点はSMILE同様  
       その後はシミュレーションで各状態のエキスパートの行動を蓄積し、学習に用いる  
-    * GAIL(Generative Adversarial Imitation Learning)  
+      * GAIL(Generative Adversarial Imitation Learning)  
       GAN(Generative Adversarial Network)を使用  
       エキスパートの戦略を模倣するモデルと、エキスパートの行動かどうかを判別する分類器で構成  
-
-
-
-
-
-1. 逆強化学習
+   1. 逆強化学習
 
 
 
